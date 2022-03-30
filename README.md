@@ -10,7 +10,7 @@ It allowes you to download the images in a high resolution or copy the url to yo
 - [ImageMagick](https://imagemagick.org/)
 
 # install 
-1. `git clone `
+1. `git clone https://github.com/mrfluffy-dev/hart-cli.git`
 2. `cd hart-cli`
 3. `sudo cp hart-cli.py /usr/local/bin/hart-cli`
 
