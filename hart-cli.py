@@ -171,9 +171,9 @@ def preview_opt(session, user_prompt):
         process = subprocess.call(
             [
                 "kitty",
-                "--hold",
-                "--window-size=100%",
-                "--window-position=0%",
+                "+icat",
+                "--place",
+                "100x100@0x0",
                 temp_file_path.as_posix(),
             ]
         )
