@@ -237,7 +237,10 @@ def browse_options(session, user_prompt, *, persist=False, persist_with=None):
 
     if user_choice == UserBrowseSelection.PREVIEW:
         preview_opt(session, user_prompt)
-
+        return browse_options(
+            session, user_prompt, persist=persist, persist_with=persist_with
+        )
+    
     if persist:
         return persist_with
 
