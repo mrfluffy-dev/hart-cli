@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import enum
 import pathlib
 import re
