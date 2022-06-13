@@ -202,13 +202,15 @@ def browse_options(session, user_prompt, *, persist=False, persist_with=None):
 
         options = {
             "[d]ownload": UserBrowseSelection.DOWNLOAD,
-            "p[r]eview": UserBrowseSelection.PREVIEW,
         }
 
         if not persist:
-            options[
-                "[p]ersist selection for next in queue"
-            ] = UserBrowseSelection.PERSIST_SELECTION
+            options.update(
+                {
+                    "[p]ersist selection for next in queue": UserBrowseSelection.PERSIST_SELECTION,
+                    "p[r]eview": UserBrowseSelection.PREVIEW,
+                }
+            )
 
         if pyperclip is not None:
             options["[c]opy to clipboard"] = UserBrowseSelection.COPY_TO_CLIPBOARD
@@ -275,6 +277,7 @@ def __main__(query=None):
                         persist=persist_with is not None,
                         persist_with=persist_with,
                     )
+
 
 if __name__ == "__main__":
     __main__(*sys.argv[1:])
