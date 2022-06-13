@@ -4,7 +4,8 @@ It allowes you to download the images in a high resolution or copy the url to yo
 
 # Dependencies 
 - [kitty](https://github.com/kovidgoyal/kitty)
-- [requests](https://pypi.org/project/requests/)
+- [httpx](https://pypi.org/project/httpx/)
+- [lxml](https://pypi.org/project/lxml/)
 - [beatifulsoup4](https://pypi.org/project/beautifulsoup4/)
 - [pyperclip](https://pypi.org/project/pyperclip/)
 - [ImageMagick](https://imagemagick.org/)
